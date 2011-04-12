@@ -1,0 +1,10 @@
+Package: GSVAdata
+Title: Data employed in the vignette of the GSVA package
+Version: 0.99.0
+Author: Robert Castelo <robert.castelo@upf.edu>
+Description: This package stores the data employed in the vignette of the GSVA package. These data belong to the following publications: Armstrong et al. Nat Genet 30:41-47, 2002; Verhaak et al. Cancer Cell 17:98-110, 2010; Cahoy et al. J Neurosci 28:264-278, 2008.
+Maintainer: Robert Castelo <robert.castelo@upf.edu>
+Depends: Biobase, GSEABase, hgu95a.db
+License: GPL (>= 2)
+biocViews: ExperimentData, Cancer, Leukemia
+
