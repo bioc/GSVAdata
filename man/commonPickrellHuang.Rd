@@ -1,7 +1,8 @@
 \name{commonPickrellHuang}
 \alias{commonPickrellHuang}
-\alias{pickrell}
-\alias{huang}
+\alias{huangArrayRMAnoBatchCommon_eset}
+\alias{pickrellCountsArgonneCQNcommon_eset}
+\alias{pickrellCountsYaleCQNcommon_eset}
 
 \docType{data}
 \title{
@@ -46,7 +47,7 @@ formed part of family trios and only samples belonging to father or mother were 
 Then, using the \code{rma()} function from the \code{oligo} package with argument
 \code{target="core"} expression values were background corrected, normalized and
 summarized into Affymetrix transcript clusters. Using the \code{getNetAffx} function
-from the \code{oligo} package}, Affymetrix transcript cluster identifiers were
+from the \code{oligo} package, Affymetrix transcript cluster identifiers were
 translated into Entrez Gene identifiers resolving duplicated assignments by keeping
 the transcript cluster with largest expression variability measured by its
 interquartile range (IQR). At this point an expression data matrix of 17,324 Entrez
