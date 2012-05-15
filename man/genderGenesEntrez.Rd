@@ -16,8 +16,9 @@ Entrez genes with documented sex-specific expression.
   \code{msYgenesEntrez}: Entrez gene identifiers from genes belonging to the
                          male-specific region of chromosome Y (Skaletsky et al., 2003).
 
-  \code{XiEgenesEntrez}: Ensembl gene identifiers from genes located in the X chromosome
-                         and which have been reported to escape X-inactivation.
+  \code{XiEgenesEntrez}: Entrez gene identifiers from genes located in the X chromosome
+                         and which have been reported to escape X-inactivation
+                         (Carrel and Willard, 2005).
 }
 
 \details{

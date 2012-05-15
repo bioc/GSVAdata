@@ -17,20 +17,22 @@ original experimental data was published by Huang et al. (2007) and Pickrell et 
 (2010).
 }
 \usage{
-data(pickrell)
+data(commonPickrellHuang)
 }
 \format{
   
   \code{huangArrayRMAnoBatchCommon_eset}: \code{ExpressionSet} object containing filtered,
-                        normalized and batch-removed expression values for 11,508 Entrez
+                        normalized and batch-removed microarray expression values for 11,508 Entrez
                         genes from 36 unrelated Nigerian individuals.
+
   \code{pickrellCountsArgonneCQNcommon_eset}: \code{ExpressionSet} object containing filtered
-                            and normalized read counts for 11,508 Entrez
+                            and normalized RNA-seq read counts for 11,508 Entrez
                             genes from 36 unrelated Nigerian individuals. This table of
                             counts corresponds to RNA-seq data produced at the Argonne
                             sequencing center (see Pickrell et al., 2010).
+
   \code{pickrellCountsYaleCQNcommon_eset}: \code{ExpressionSet} object containing filtered
-                            and normalized read counts for 11,508 Entrez
+                            and normalized RNA-seq read counts for 11,508 Entrez
                             genes from 36 unrelated Nigerian individuals. This table of
                             counts corresponds to RNA-seq data produced at the Yale
                             sequencing center (see Pickrell et al., 2010).
@@ -38,19 +40,21 @@ data(pickrell)
 
 \details{
 The microarray data was processed from the raw CEL files available at
-\url{http://www.ncbi.nlm.nih.gov/geo} under accession GSE7792. First only
+\url{http://www.ncbi.nlm.nih.gov/geo} under accession GSE7792. First, only
 Yoruba samples were considered. Second, data was processed using the Bioconductor
 oligo package. Quality assessment was performed by calculating NUSE and RLE
 diagnostics (Bolstad et al., 2005) and discarding those samples that either of the
-two reported diagnostics was considered below a minimum quality threshold. Most samples
-formed part of family trios and only samples belonging to father or mother were kept.
-Then, using the \code{rma()} function from the \code{oligo} package with argument
-\code{target="core"} expression values were background corrected, normalized and
-summarized into Affymetrix transcript clusters. Using the \code{getNetAffx} function
-from the \code{oligo} package, Affymetrix transcript cluster identifiers were
-translated into Entrez Gene identifiers resolving duplicated assignments by keeping
-the transcript cluster with largest expression variability measured by its
-interquartile range (IQR). At this point an expression data matrix of 17,324 Entrez
+two reported diagnostics was considered below a minimum quality threshold. Third, most
+samples formed part of family trios and only samples belonging to father or mother
+were kept. Fourth, using the RMA algorithm (Irizarry et al., 2003) implemented in the
+\code{rma()} function from the \code{oligo} package with argument \code{target="core"},
+expression values were background corrected, normalized and summarized into Affymetrix
+transcript clusters. Fifth, using the \code{getNetAffx} function from the \code{oligo}
+package, Affymetrix transcript cluster identifiers were translated into Entrez Gene
+identifiers resolving duplicated assignments by keeping the transcript cluster with
+largest expression variability measured by its interquartile range (IQR).
+
+At this point an expression data matrix of 17,324 Entrez
 genes by 59 samples was obtained and using the scanning date of each CEL file samples
 were grouped into 5 batches stored in the phenotypic variable \code{Batch} within
 the resulting \code{ExpressionSet}. Batch effect was removed by using the
@@ -77,19 +81,18 @@ filtered these two normalized tables of counts in order to match the genes and s
 obtained after processing the LCL microarray data from Huang et al. (2007). This step
 required first to translate Ensembl gene identifiers into Entrez gene identifiers and
 second to match gene and sample identifiers between microarray and RNA-seq data. After
-these two steps we obtained the two final tables of counts analyzed in this paper of
-11,508 Entrez genes by 36 samples from which 23 correspond to female and 13 to male
-individuals.
+these two steps we obtained the two final tables of counts of 11,508 Entrez genes by
+36 samples included in this package.
 }
 
 \source{
-J.K. Pickrell, J.C. Marioni, A.A Pai, J.F. Degner, B.E. Engelhardt,
-E. Nkadori, J.B Veyrieras, M. Stephens, Y. Gilad, and J.K. Pritchard,
-\emph{Nature}, 464:768-772, 2010.
+  R.S. Huang, S. Duan, W.K. Bleibel, E.O. Kistner, W. Zhang, T.A. Clark,
+  T.X. Chen, A.C. Schweitzer, J.E. Blume, N.J. Cox and M.E. Dolan,
+  \emph{Proc. Natl. Acad. Sci. USA}, 104(23):9758-9763, 2007.
 
-R.S. Huang, S. Duan, W.K. Bleibel, E.O. Kistner, W. Zhang, T.A. Clark,
-T.X. Chen, A.C. Schweitzer, J.E. Blume, N.J. Cox and M.E. Dolan,
-\emph{Proc. Natl. Acad. Sci. USA}, 104(23):9758-9763, 2007.
+  J.K. Pickrell, J.C. Marioni, A.A Pai, J.F. Degner, B.E. Engelhardt,
+  E. Nkadori, J.B Veyrieras, M. Stephens, Y. Gilad, and J.K. Pritchard,
+  \emph{Nature}, 464:768-772, 2010.
 }
 \references{
   B.M. Bolstad, F. Collin, K. Brettschneider, L. Simpson, R.A. Irizarry, and T.P. Speed.
@@ -98,6 +101,13 @@ T.X. Chen, A.C. Schweitzer, J.E. Blume, N.J. Cox and M.E. Dolan,
 
   K.D. Hansen, R.A. Irizarry and Z. Wu. Removing technical variability
   in RNA-seq data using conditional quantile normalization. \emph{Biostatistics}, 2012.
+
+  R.A. Irizarry, B. Hobbs, F. Collin, Y.D. Beazer-Barclay, K.J. Antonellis, U. Scherf and T.P. Speed.
+  Exploration, normalization, and summaries of high density oligonucleotide array probe level data.
+  \emph{Biostatistics}, 4(2):249--64, 2003.
+
+  S. Haenzelmann, J. Guinney and R. Castelo. GSVA: Gene Set Variation Analysis for
+  microarray and RNA-Seq data, \emph{submitted}.
 }
 \seealso{
   \code{\link{genderGenesEntrez}}
