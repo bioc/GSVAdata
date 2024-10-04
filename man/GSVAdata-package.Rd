@@ -48,8 +48,8 @@ L. Carrel and H.F. Willard. X-inactivation profile reveals extensive
 variability in X-linked gene expression in females.
 \emph{Nature}, 434:400--404, 2005.
 
-D. Costa, N. Bonet, A. Solé, J.M. González de Aledo-Castillo, E. Sabidó,
-F. Casals, C. Rovira, A. Nadal, J.L. Marín, T. Cobo and R. Castelo. Genome-wide
+D. Costa, N. Bonet, A. Sole, J.M. Gonzalez de Aledo-Castillo, E. Sabido,
+F. Casals, C. Rovira, A. Nadal, J.L. Marin, T. Cobo and R. Castelo. Genome-wide
 postnatal changes in immunity following fetal inflammatory response.
 \emph{FEBS Journal}, 288:2311-2331, 2021. \url{https://doi.org/10.1111/febs.15578}.
 
@@ -57,7 +57,7 @@ R.S. Huang, S. Duan, W.K. Bleibel, E.O. Kistner, W. Zhang, T.A. Clark,
 T.X. Chen, A.C. Schweitzer, J.E. Blume, N.J. Cox and M.E. Dolan,
 \emph{Proc. Natl. Acad. Sci. USA}, 104(23):9758-9763, 2007.
 
-A. Liberzon, A. Subramanian, R. Pinchback, H. Thorvaldsdóttir, P. Tamayo,
+A. Liberzon, A. Subramanian, R. Pinchback, H. Thorvaldsdottir, P. Tamayo,
 J.P. Mesirov. Molecular signatures database (MSigDB) 3.0. \emph{Bioinformatics},
 27(12):1739-40, 2011.
 

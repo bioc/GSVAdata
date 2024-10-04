@@ -46,8 +46,8 @@
     }
 }
 \source{
-D. Costa, N. Bonet, A. Solé, J.M. González de Aledo-Castillo, E. Sabidó,
-F. Casals, C. Rovira, A. Nadal, J.L. Marín, T. Cobo and R. Castelo. Genome-wide
+D. Costa, N. Bonet, A. Sole, J.M. Gonzalez de Aledo-Castillo, E. Sabido,
+F. Casals, C. Rovira, A. Nadal, J.L. Marin, T. Cobo and R. Castelo. Genome-wide
 postnatal changes in immunity following fetal inflammatory response.
 \emph{FEBS Journal}, 288:2311-2331, 2021. \url{https://doi.org/10.1111/febs.15578}.
 }
