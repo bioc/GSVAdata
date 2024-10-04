@@ -11,10 +11,12 @@ This package contains data employed in the vignette of the GSVA package.
 
 \section{Data sets}{
   \itemize{
+    \item \code{\link{geneExpCostaEtAl2021}} Bulk RNA-seq data by Costa et al. (2021).
     \item \code{\link{leukemia}} Leukemia data by Armstrong et al. (2002) from
           the Broad Institute.
     \item \code{\link{c2BroadSets}} C2 canonical pathways from the MSigDB 3.0
-          database of gene sets at the Broad Institute.
+          database of gene sets at the Broad Institute (Subramanian et al. 2005;
+          Liberzon et al., 2011).
     \item \code{\link{gbm_VerhaakEtAl}} TCGA Glioblastoma Multiforme microarray
           expression data from Verhaak et al. (2010).
     \item \code{\link{brainTxDbSets}} Gene sets signatures specific to four
@@ -46,9 +48,18 @@ L. Carrel and H.F. Willard. X-inactivation profile reveals extensive
 variability in X-linked gene expression in females.
 \emph{Nature}, 434:400--404, 2005.
 
+D. Costa, N. Bonet, A. Solé, J.M. González de Aledo-Castillo, E. Sabidó,
+F. Casals, C. Rovira, A. Nadal, J.L. Marín, T. Cobo and R. Castelo. Genome-wide
+postnatal changes in immunity following fetal inflammatory response.
+\emph{FEBS Journal}, 288:2311-2331, 2021. \url{https://doi.org/10.1111/febs.15578}.
+
 R.S. Huang, S. Duan, W.K. Bleibel, E.O. Kistner, W. Zhang, T.A. Clark,
 T.X. Chen, A.C. Schweitzer, J.E. Blume, N.J. Cox and M.E. Dolan,
 \emph{Proc. Natl. Acad. Sci. USA}, 104(23):9758-9763, 2007.
+
+A. Liberzon, A. Subramanian, R. Pinchback, H. Thorvaldsdóttir, P. Tamayo,
+J.P. Mesirov. Molecular signatures database (MSigDB) 3.0. \emph{Bioinformatics},
+27(12):1739-40, 2011.
 
 J.K. Pickrell, J.C. Marioni, A.A Pai, J.F. Degner, B.E. Engelhardt,
 E. Nkadori, J.B Veyrieras, M. Stephens, Y. Gilad, and J.K. Pritchard,
@@ -63,6 +74,11 @@ K. Scott, B. Schultz, C. Strong, A. Tin-Wollam, S.P. Yang, R.H. Waterston,
 R.K. Wilson, S. Rozen, and D.C. Page. The male-specific region of the
 human Y chromosome is a mosaic of discrete sequence classes.
 \emph{Nature}, 423:825--837, 2003.
+
+A. Subramanian, P. Tamayo, V.K. Mootha, S. Mukherjee, B.L. Ebert, M.A. Gillette,
+A. Paulovich, S.L. Pomeroy, T.R. Golub, E.S. Lander, J.P. Mesirov. Gene set
+enrichment analysis: a knowledge-based approach for interpreting genome-wide
+expression profiles. \emph{Proc. Natl. Acad. Sci. USA}, 102(43):15545-50, 2005.
 
 R.G.W. Verhaak, K.A. Hoadley, E. Purdom, V. Wang, Y. Qi, et al.
 Integrated genomic analysis identifies clinically relevant subtypes of
