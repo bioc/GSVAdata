@@ -11,7 +11,7 @@ This package contains data employed in the vignette of the GSVA package.
 
 \section{Data sets}{
   \itemize{
-    \item \code{\link{geneExpCostaEtAl2021}} Bulk RNA-seq data by Costa et al. (2021).
+    \item \code{\link{geneprotExpCostaEtAl2021}} Bulk RNA-seq data by Costa et al. (2021).
     \item \code{\link{leukemia}} Leukemia data by Armstrong et al. (2002) from
           the Broad Institute.
     \item \code{\link{c2BroadSets}} C2 canonical pathways from the MSigDB 3.0

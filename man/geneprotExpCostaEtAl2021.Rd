@@ -1,20 +1,24 @@
-\name{geneExpCostaEtAl2021}
+\name{geneprotExpCostaEtAl2021}
+\alias{geneprotExpCostaEtAl2021}
 \alias{geneExpCostaEtAl2021}
+\alias{protExpCostaEtAl2021}
 \docType{data}
 \title{RNA-seq Data by Costa et al. (2021)}
 \description{
- Normalized log-CPM units of expression derived from the bulk RNA sequencing
- (RNA-seq) data published by Costa et al. (2021). The RNA-seq data was obtained
- by extracting and sequencing total RNA from archived neonatal dried blood spots
+ Gene and protein expression data published by Costa et al. (2021). The gene
+ expression data consists of normalized log-CPM units of expression derived from
+ bulk RNA sequencing (RNA-seq) of total RNA from archived neonatal dried blood spots
  (DBS) specimens from 21 extremely low gestational age newborns (ELGANs, < 28
  weeks of gestation). The DBS specimens were obtained from 8 females and 13 males,
  among which 10 where exposed to a fetal inflammatory response (FIR) before birth,
- and 11 were not exposed.
+ and 11 were not exposed. The protein expresion data was obtained from the same
+ specimens, except for a missing one, using a mass-spectrometry assay, and the
+ included data corresponds to the VSN normalized data before and after imputation.
 }
-\usage{data(geneExpCostaEtAl2021)}
+\usage{data(geneprotExpCostaEtAl2021)}
 \details{
-    The data is contained in an \code{SummarizedExperiment} object called
-    \code{geneExpCostaEtAl2021} obtained as follows:
+    The RNA-seq data is contained in a \code{SummarizedExperiment} object
+    called \code{geneExpCostaEtAl2021} obtained as follows:
 
     \itemize{
       \item Raw 2x75nt paired-end reads in FASTQ files were aligned to the
@@ -44,6 +48,9 @@
             function \code{cpm()} with default parameters, except for
             \code{log=TRUE}.
     }
+    The protein expression data is contained in a \code{SummarizedExperiment} object
+    called \code{protExpCostaEtAl2021}. You may consult the publication for further
+    details on how these data were pre-processed.
 }
 \source{
 D. Costa, N. Bonet, A. Sole, J.M. Gonzalez de Aledo-Castillo, E. Sabido,
@@ -54,14 +61,15 @@ postnatal changes in immunity following fetal inflammatory response.
 \references{
 Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, Batut P,
 Chaisson M, and Gingeras TR. STAR: ultrafast universal RNA-seq aligner.
-\emph{Bioinformatics}, 29:15-–21, 2013.
+\emph{Bioinformatics}, 29:15--21, 2013.
 
 Robinson MD, McCarthy DJ, Smyth GK. edgeR: a Bioconductor package for
 differential expression analysis of digital gene expression data.
 \emph{Bioinformatics}, 26:139--140, 2010.
 }
 \examples{
-data(geneExpCostaEtAl2021)
+data(geneprotExpCostaEtAl2021)
 geneExpCostaEtAl2021
+protExpCostaEtAl2021
 }
 \keyword{datasets}
