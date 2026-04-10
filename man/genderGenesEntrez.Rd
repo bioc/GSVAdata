@@ -10,7 +10,7 @@ Entrez genes with documented sex-specific expression
 \description{
 Entrez genes with documented sex-specific expression.
 }
-\usage{data(genderGenes)}
+\usage{data(genderGenesEntrez)}
 \format{
   
   \code{msYgenesEntrez}: Entrez gene identifiers from genes belonging to the
