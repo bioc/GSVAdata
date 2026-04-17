@@ -12,8 +12,6 @@ This package contains data employed in the vignette of the GSVA package.
 \section{Data sets}{
   \itemize{
     \item \code{\link{geneprotExpCostaEtAl2021}} Bulk RNA-seq data by Costa et al. (2021).
-    \item \code{\link{leukemia}} Leukemia data by Armstrong et al. (2002) from
-          the Broad Institute.
     \item \code{\link{c2BroadSets}} C2 canonical pathways from the MSigDB 3.0
           database of gene sets at the Broad Institute (Subramanian et al. 2005;
           Liberzon et al., 2011).
@@ -35,10 +33,6 @@ S. Haenzelmann, J. Guinney and R. Castelo
 }
 
 \references{
-S.A. Armstrong, J.E. Staunton, L.B. Silverman, R. Pieters, M.L. den Boer,
-M.D. Minden, S.E. Sallan, E.S. Lander, T.R. Golub and S.J. Korsmeyer.
-MLL translocations specify a distinct gene expression profile that distinguishes a unique leukemia. \emph{Nat Genet} 30:41-47, 2002.
-
 J.D. Cahoy, B. Emery, A. Kaushal, L.C. Foo, J.L. Zamanian, et al.
 A transcriptome database for astrocytes, neurons, and oligodendrocytes: a
 new resource for understanding brain development and function.

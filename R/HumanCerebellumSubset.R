@@ -28,7 +28,7 @@
 #' @export
 
 HumanCerebellumNormSubset <- function() {
-    syspath <- system.file("extdata", package="GSVA")
+    syspath <- system.file("extdata", package="GSVAdata")
     fname <- "human_cerebellum_norm_logcounts_250x4816.mtx.gz"
     logcounts <- as(readMM(gzfile(file.path(syspath, fname))), "CsparseMatrix")
     fname <- "human_cerebellum_rowdata_250x4816.csv.gz"
