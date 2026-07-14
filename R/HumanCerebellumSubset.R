@@ -29,13 +29,13 @@
 
 HumanCerebellumNormSubset <- function() {
     syspath <- system.file("extdata", package="GSVAdata")
-    fname <- "human_cerebellum_norm_logcounts_250x4816.mtx.gz"
+    fname <- "human_cerebellum_norm_logcounts_250x4573.mtx.gz"
     logcounts <- as(readMM(gzfile(file.path(syspath, fname))), "CsparseMatrix")
-    fname <- "human_cerebellum_rowdata_250x4816.csv.gz"
+    fname <- "human_cerebellum_rowdata_250x4573.csv.gz"
     rowdata <- read.csv(gzfile(file.path(syspath, fname)), row.names=1)
-    fname <- "human_cerebellum_coldata_250x4816.csv.gz"
+    fname <- "human_cerebellum_coldata_250x4573.csv.gz"
     coldata <- read.csv(gzfile(file.path(syspath, fname)), row.names=1)
-    fname <- "human_cerebellum_spatialcoords_250x4816.csv.gz"
+    fname <- "human_cerebellum_spatialcoords_250x4573.csv.gz"
     spatialcoords <- as.matrix(read.csv(gzfile(file.path(syspath, fname)),
                                         row.names=1))
 
@@ -46,7 +46,7 @@ HumanCerebellumNormSubset <- function() {
                              sample_id="HumanCerebellum_WholeTranscriptome")
     spe <- addImg(spe, sample_id="HumanCerebellum_WholeTranscriptome",
                   image_id="lowres",
-                  imageSource=file.path(syspath, "human_cerebellum_lowres.png"),
+                  imageSource=file.path(syspath, "human_cerebellum_raw_image_250x4573.png"),
                   scaleFactor=0.0450045, load=TRUE)
     spe
 }
